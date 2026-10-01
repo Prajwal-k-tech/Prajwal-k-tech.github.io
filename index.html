@@ -1,33 +1,371 @@
-<html>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><body>
- 
-   <nav class="navbar navbar-expand-lg fixed-top ">  
- <a class="navbar-brand" href="#">Home</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
- <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
- <li class="nav-item">
-     <a class="nav-link" data-value="about" href="#">About</a>        </li>  
-<li class="nav-item">
-    <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>    
- </li>
- <li class="nav-item"> 
-    <a class="nav-link " data-value="blog" href="#">Blog</a>         </li>   
-<li class="nav-item">  
-   <a class="nav-link " data-value="team" href="#">         Team</a>       </li>  
-<li class="nav-item"> 
- <a class="nav-link " data-value="contact" href="#">Contact</a>       </li> 
-</ul> 
-</div></nav>
-  <h1>Hello world </h1>
-<p> Hello World, I'm Prajwal this is my Website 
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2c2525" />
+    <meta
+      name="description"
+      content="Prajwal Kumar K: computer science student at IIIT Kottayam. Interactive software, imperfect-information agents, game theory and trustworthy machine learning."
+    />
+    <meta
+      property="og:title"
+      content="Prajwal Kumar K | Software & strategic AI"
+    />
+    <meta
+      property="og:description"
+      content="Selected work in interactive systems, game agents and machine learning evaluation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prajwal-k-tech.github.io/" />
+    <meta
+      property="og:image"
+      content="https://prajwal-k-tech.github.io/assets/social-preview.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://prajwal-k-tech.github.io/" />
+    <title>Prajwal Kumar K | Software & strategic AI</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link
+      rel="preload"
+      href="assets/fonts/geist-regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#main" aria-label="Prajwal Kumar K home"
+        >prajwal<span aria-hidden="true">.</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#research">Research</a
+        ><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main" class="wrap">
+      <section class="hero" aria-labelledby="intro">
+        <p class="intro-label">Software engineering & strategic AI</p>
+        <h1 id="intro">Prajwal Kumar K<span aria-hidden="true">.</span></h1>
+        <p class="hero-copy">
+          I build interactive systems and explore how agents make decisions
+          under uncertainty.
+        </p>
+        <div class="hero-links">
+          <a class="button" href="#work"
+            >Explore work <span aria-hidden="true">↘</span></a
+          ><a href="assets/prajwal-kumar-k-sde.pdf"
+            >Resume <span aria-hidden="true">↗</span></a
+          ><a href="https://github.com/Prajwal-k-tech"
+            >GitHub <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section id="work" class="section" aria-labelledby="work-title">
+        <h2 id="work-title">Selected work</h2>
+        <p class="section-intro">
+          Interactive software and experiments in strategic decision-making.
+        </p>
+        <div class="project-grid">
+          <article class="project">
+            <a
+              class="project-image"
+              href="https://battle-cp.tech/"
+              aria-label="Play BattleCP"
+              ><img
+                src="assets/battlecp.webp"
+                alt="BattleCP's pixel-art interface, with Start and Join match controls"
+                width="1200"
+                height="597"
+                fetchpriority="high"
+            /></a>
+            <div class="project-heading">
+              <h3>BattleCP</h3>
+              <span class="status">Live product</span>
+            </div>
+            <p>
+              Multiplayer Battleship where solving Codeforces problems unlocks
+              weapons. Built and deployed with a Rust backend and live WebSocket
+              matches.
+            </p>
+            <p class="stack">Rust / Axum / Tokio / Next.js</p>
+            <div class="artifact-links">
+              <a href="https://battle-cp.tech/">Play BattleCP ↗</a
+              ><a href="https://github.com/Prajwal-k-tech/Battle-CP">Source ↗</a
+              ><a href="https://codeforces.com/blog/entry/152124"
+                >Launch discussion ↗</a
+              >
+            </div>
+            <details>
+              <summary>Engineering decisions</summary>
+              <p>
+                The server owns game rules and coordinates match state.
+                Codeforces submission checks connect programming progress to
+                gameplay, while reconnect handling keeps a match recoverable.
+                Public launch feedback informs iterations on the rules and
+                interface.
+              </p>
+            </details>
+          </article>
+          <article class="project">
+            <a
+              class="project-image"
+              href="https://github.com/Prajwal-k-tech/bluff"
+              aria-label="Explore Bluff source"
+              ><img
+                src="assets/bluff.webp"
+                alt="Bluff's playable local prototype, showing the alias entry and game controls"
+                width="1000"
+                height="625"
+                loading="lazy"
+            /></a>
+            <div class="project-heading">
+              <h3>Bluff</h3>
+              <span class="status">Research prototype</span>
+            </div>
+            <p>
+              An imperfect-information card-game agent combining Bayesian
+              opponent models, bluff prediction and persistent profiles in a
+              playable web prototype.
+            </p>
+            <p class="stack">Python / PyTorch / FastAPI / Next.js</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/bluff">Source ↗</a
+              ><a href="https://github.com/Prajwal-k-tech/bluff#readme"
+                >Project overview ↗</a
+              >
+            </div>
+            <details>
+              <summary>What the evaluation establishes</summary>
+              <p>
+                Local experiments compare components using seeded synthetic
+                opponents and held-out conditions. Some promising variants
+                failed game-level promotion gates. Bounded micro-game solver
+                results are separate from full-deck play, and the current work
+                does not establish generalization to human opponents. The public
+                repository may lag the local prototype pictured here.
+              </p>
+            </details>
+          </article>
+          <article class="project text-project">
+            <div class="project-heading">
+              <h3>Drishti-XAI</h3>
+              <span class="status">Research prototype</span>
+            </div>
+            <p>
+              I built the core MATLAB/Python pipeline for a team
+              diabetic-retinopathy screening prototype, including grading,
+              explanations and evaluation across datasets.
+            </p>
+            <p class="stack">MATLAB / Python / PyTorch / Simulink</p>
+            <div class="finding">
+              <span>Key finding</span>
+              <p>
+                Strong internal results did not transfer to an external
+                population. Domain shift became the central evaluation lesson.
+              </p>
+            </div>
+            <details>
+              <summary>Evaluation & limitations</summary>
+              <p>
+                The current MATLAB pipeline reports sensitivity 0.908 and
+                specificity 0.877 on a sealed APTOS test split (733 images).
+                With its threshold unchanged on Messidor-2, sensitivity falls to
+                0.363, specificity is 0.865, and AUC is 0.666. These are
+                separate internal and external evaluations, not clinical
+                deployment evidence. The repository is private; this summary is
+                based on the project's current evaluation reports.
+              </p>
+              <p>
+                Quality gating, vessel/lesion analysis, calibration and Grad-CAM
+                support the workflow. Clinician assessment and clinical
+                validation remain open.
+              </p>
+            </details>
+          </article>
+          <article class="project text-project">
+            <div class="project-heading">
+              <h3>PokeForge</h3>
+              <span class="status">In progress</span>
+            </div>
+            <p>
+              A Pokémon battle-agent project investigating decision-making with
+              hidden opponent information, legal action constraints and
+              reproducible baselines.
+            </p>
+            <p class="stack">Python / PyTorch / Pokémon Showdown</p>
+            <div class="finding">
+              <span>Current milestone</span>
+              <p>
+                Pinned FoulPlay and Metamon baselines complete legal local Gen 9
+                OU battles. Paired measurement is in progress.
+              </p>
+            </div>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/PokeForge">Source ↗</a>
+            </div>
+            <details>
+              <summary>Scope of the work</summary>
+              <p>
+                The earlier educational prototype compares MLP and Transformer
+                policies on heuristic labels. Its small pilot does not establish
+                competitive strength. Current baseline reproduction uses
+                isolated environments and pinned artifacts; benchmark-server
+                conformance, opponent-adaptation results and public ladder
+                performance remain unverified. FoulPlay and Metamon are
+                attributed third-party baselines.
+              </p>
+            </details>
+          </article>
+        </div>
+        <div class="more-work">
+          <h3>More work</h3>
+          <div>
+            <a href="https://github.com/Openverse-iiitk/DSA-Website"
+              >Algorithma ↗</a
+            >
+            <p>
+              Interactive DSA visualizations through Openverse; co-presented the
+              team project at OOSC 3.0, IIT Kanpur.
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/Prajwal-k-tech/silconspire.cpp"
+              >SiliconSpire ↗</a
+            >
+            <p>
+              C++ and Rust QAP heuristics combining Grey Wolf Optimization with
+              Tabu Search.
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/Prajwal-k-tech/Anchor">Anchor ↗</a>
+            <p>
+              Team Hogorithm received Best Software at IEEE MACE .hack(); '26.
+              I contributed Kotlin safety routing, domain models, UI and tests;
+              several product flows remain unfinished.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="research"
+        class="section research"
+        aria-labelledby="research-title"
+      >
+        <div>
+          <h2 id="research-title">Questions I want<br />to work on</h2>
+          <p>
+            My interests include game theory, multi-agent learning and AI safety.
+          </p>
+        </div>
+        <div class="questions">
+          <article>
+            <h3>Learning about an opponent</h3>
+            <p>
+              How can an agent adapt to another player while respecting
+              uncertainty and hidden information?
+            </p>
+          </article>
+          <article>
+            <h3>Knowing when a model fails</h3>
+            <p>
+              What do ablations, held-out opponents and external datasets reveal
+              that a headline score misses?
+            </p>
+          </article>
+          <article>
+            <h3>Reliable strategic behavior</h3>
+            <p>
+              How can we evaluate multi-agent systems for robustness, incentives
+              and safety as their environment changes?
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div>
+          <h2 id="about-title">A little background</h2>
+          <p>
+            I'm a Computer Science and Engineering student at IIIT Kottayam,
+            graduating in 2028. I enjoy building usable software and
+            understanding the decisions inside it.
+          </p>
+          <p>
+            I spent my childhood in Germany and speak German alongside English,
+            Hindi and Kannada.
+          </p>
+        </div>
+        <div class="background">
+          <article>
+            <h3>Full-stack development</h3>
+            <p class="meta">CIO Mogul / Dec 2025 - Mar 2026</p>
+            <p>
+              Magazine websites, reusable interfaces and editorial
+              administration backed by Supabase and PostgreSQL.
+            </p>
+          </article>
+          <article>
+            <h3>Open-source & community</h3>
+            <p class="meta">IIIT Kottayam / Openverse & Coders Club</p>
+            <p>
+              Technical leadership, algorithm visualizations and
+              programming-contest organization.
+            </p>
+          </article>
+          <article>
+            <h3>Publication & presentation</h3>
+            <p>
+              <a href="https://doi.org/10.1109/ICICI65870.2025.11069657"
+                >Collaboration Enabled Energy-Aware Learning Model Exchange
+                (CE-LME) for Edge Computing ↗</a
+              >
+            </p>
+            <p class="meta">First-listed author / IEEE ICICI 2025</p>
+            <p>Presented the paper at the conference.</p>
+          </article>
+          <article>
+            <h3>Competitive problem-solving</h3>
+            <p>
+              <a href="https://codeforces.com/profile/oGhostyyy"
+                >Codeforces Pupil, peak 1222 (profile max 1221) ↗</a
+              >
+            </p>
+            <p>
+              HOLMES CTF 2025: team SuKMaDhe placed 86th of 7,085 teams and
+              solved 65/65 challenges.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="section contact"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title">Let's work together.</h2>
+        <p>
+          Interested in research internships and software engineering
+          opportunities, remotely or in person.
+        </p>
+        <a class="contact-email" href="mailto:prajwal.k141205@gmail.com"
+          >prajwal.k141205@gmail.com <span aria-hidden="true">↗</span></a
+        >
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/prajwal-kumar-k-632411307/"
+            >LinkedIn ↗</a
+          ><a href="https://leetcode.com/u/prajwal_k_k_/">LeetCode ↗</a
+          ><a href="https://www.codechef.com/users/oghostyyy">CodeChef ↗</a
+          ><a href="https://atcoder.jp/users/oGhostyyy">AtCoder ↗</a>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <p>Prajwal Kumar K</p>
+      <a href="#main">Back to top ↑</a>
+    </footer>
+  </body>
 </html>
