@@ -1,6 +1,6 @@
 # Ristretto portfolio draft
 
-Static HTML/CSS portfolio for Prajwal Kumar K, prepared on the local `draft/ristretto-portfolio` branch. No framework, tracking, external runtime assets or JavaScript is required. The live GitHub Pages page has not been changed.
+Static HTML/CSS portfolio for Prajwal Kumar K, prepared on the pushed `draft/ristretto-portfolio` review branch. No framework, tracking, external runtime assets or JavaScript is required. The live GitHub Pages page has not been changed.
 
 Preview from this directory:
 
@@ -18,4 +18,4 @@ The broad introduction names competitive programming and algorithms, systems, ga
 
 Desktop and mobile screenshots are in `../portfolio-review/current-desktop.png` and `../portfolio-review/current-mobile.png`. The latest browser check at 390px reported a 390px document width with no horizontal overflow. The download PDF hash matches `../resumes/sde.pdf`. Local HTML asset and fragment references resolved in the preceding check.
 
-The desktop, tablet and mobile screenshots from the earlier October 2 content pass are also retained in `../portfolio-review/`. Lighthouse and accessibility reports are historical from October 1, before the most recent copy edits; they have not been rerun. Nothing has been published.
+The desktop, tablet and mobile screenshots from the earlier October 2 content pass are also retained in `../portfolio-review/`. Lighthouse results are historical from October 1 and were not rerun for the copy update. The branch is pushed for review; nothing has been deployed to GitHub Pages.
