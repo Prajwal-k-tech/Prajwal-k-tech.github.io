@@ -1,6 +1,6 @@
 # Ristretto portfolio draft
 
-Static HTML/CSS portfolio for Prajwal Kumar K, prepared on the local `draft/ristretto-portfolio` branch. No framework, tracking, external runtime assets or JavaScript required. The current GitHub Pages page is unchanged until explicitly published.
+Static HTML/CSS portfolio for Prajwal Kumar K, prepared on the local `draft/ristretto-portfolio` branch. No framework, tracking, external runtime assets or JavaScript is required. The live GitHub Pages page has not been changed.
 
 Preview from this directory:
 
@@ -8,10 +8,14 @@ Preview from this directory:
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:4173. There is no compilation step; these files are the deployable site. Browser screenshots and review notes are stored outside this repository under `career/portfolio-review/`.
+Open http://127.0.0.1:4173. The page is ready for a short factual and privacy review before publication. Do not treat that review as a request to redesign it.
 
-Content is in `index.html`; design tokens and responsive rules are in `styles.css`. Typeface: self-hosted Geist, SIL Open Font License in `assets/fonts/OFL.txt`. Project images are actual BattleCP and local Bluff screenshots converted to WebP. The latter is explicitly identified as a local prototype. The downloadable current SDE resume draft contains no phone number or street address. Review content and resume before publication.
+`index.html` contains the copy and project order; `styles.css` contains the responsive design. The page uses a restrained Ristretto palette, self-hosted Geist (OFL license in `assets/fonts/OFL.txt`), screenshots from the actual BattleCP and Bluff projects, and a downloadable SDE resume. Bluff is labeled as an in-progress local prototype. PokeForge is listed as in progress. The GitHub profile README remains theme-neutral.
 
-Design read: developer/research portfolio for technical reviewers with restrained Ristretto colors. Native CSS implements the aesthetic; no external design system implied. DESIGN_VARIANCE 5, MOTION_INTENSITY 2, VISUAL_DENSITY 3. Dark mode is an explicit brand choice. One accent, consistent 8px image/button radius, real artifacts and native disclosures provide hierarchy.
+The broad introduction names competitive programming and algorithms, systems, game theory and machine learning. Individual project sections add relevant detail without making those projects the whole profile. Review the Drishti-XAI summary and resume/contact details before publication.
 
-Updated 2 October 2026: added Anchor under More work with team award attribution, a specific contribution summary and an explicit note that several product flows remain unfinished. Desktop, tablet and mobile screenshots were refreshed in `career/portfolio-review/`; the October 1 Lighthouse and accessibility reports have not been rerun after this content/layout edit.
+## Local review
+
+Desktop and mobile screenshots are in `../portfolio-review/current-desktop.png` and `../portfolio-review/current-mobile.png`. The latest browser check at 390px reported a 390px document width with no horizontal overflow. The download PDF hash matches `../resumes/sde.pdf`. Local HTML asset and fragment references resolved in the preceding check.
+
+The desktop, tablet and mobile screenshots from the earlier October 2 content pass are also retained in `../portfolio-review/`. Lighthouse and accessibility reports are historical from October 1, before the most recent copy edits; they have not been rerun. Nothing has been published.
