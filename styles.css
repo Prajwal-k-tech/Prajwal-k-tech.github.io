@@ -65,6 +65,12 @@ h3 {
   letter-spacing: -0.045em;
   margin: 0;
 }
+h1,
+h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
 h2 {
   font-size: clamp(30px, 3.3vw, 43px);
 }
@@ -362,6 +368,91 @@ details p {
 .contact-links a {
   text-decoration: none;
 }
+.competition,
+.security,
+.outside {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  gap: 80px;
+}
+.competition-intro > p:last-child {
+  max-width: 370px;
+  margin-top: 22px;
+}
+.competition-content {
+  display: grid;
+  gap: 28px;
+}
+.rating-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  padding: 24px 0 22px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.eyebrow {
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.rating-value {
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: var(--text);
+  margin: 14px 0 6px;
+  font-variant-numeric: tabular-nums;
+}
+.rating-caption {
+  font-size: 13px;
+  margin: 0;
+}
+.rating-feature > a,
+.profile-links a {
+  color: var(--accent);
+  font-size: 13px;
+  text-decoration: none;
+}
+.rating-feature > a:hover,
+.profile-links a:hover {
+  text-decoration: underline;
+}
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+.ctf-highlight {
+  margin-top: 6px;
+  padding: 20px 22px;
+  background: var(--deep);
+  border-left: 2px solid var(--accent);
+}
+.ctf-highlight h3 {
+  font-size: 19px;
+  margin: 10px 0 8px;
+}
+.ctf-highlight p {
+  margin: 0;
+  font-size: 14px;
+}
+.security {
+  align-items: center;
+}
+.security .ctf-highlight {
+  margin: 0;
+  padding: 28px;
+}
+.outside > p {
+  max-width: 540px;
+  margin: 4px 0 0;
+  font-size: clamp(17px, 1.8vw, 21px);
+  line-height: 1.65;
+}
 footer {
   padding: 25px 0 35px;
   border-top: 1px solid var(--rule);
@@ -386,7 +477,10 @@ footer a {
     width: calc(100% - 56px);
   }
   .research,
-  .about {
+  .about,
+  .competition,
+  .security,
+  .outside {
     gap: 40px;
   }
   .background {
@@ -454,6 +548,9 @@ footer a {
   .project-grid,
   .research,
   .about,
+  .competition,
+  .security,
+  .outside,
   .more-work {
     grid-template-columns: 1fr;
   }
@@ -477,7 +574,10 @@ footer a {
     margin-bottom: 28px;
   }
   .research,
-  .about {
+  .about,
+  .competition,
+  .security,
+  .outside {
     gap: 32px;
   }
   .research > div > p,
@@ -496,6 +596,14 @@ footer a {
   }
   .contact-links {
     gap: 20px;
+  }
+  .rating-feature {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .outside > p {
+    margin-top: -10px;
+    font-size: 17px;
   }
   .contact h2 {
     font-size: 32px;
