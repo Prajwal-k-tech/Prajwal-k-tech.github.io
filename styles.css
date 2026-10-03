@@ -211,6 +211,10 @@ h1 {
   object-fit: contain;
   background: #050505;
 }
+.bluff-project-image img {
+  object-fit: cover;
+  object-position: center;
+}
 .project-image:hover img {
   transform: scale(1.025);
 }
@@ -511,6 +515,7 @@ footer a {
   }
   .project-image img { height: 300px; }
   .battlecp-project-image img { object-fit: contain; }
+  .bluff-project-image img { object-fit: cover; }
   .project-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -594,6 +599,7 @@ footer a {
     object-fit: cover;
   }
   .battlecp-project-image img { object-fit: contain; }
+  .bluff-project-image img { aspect-ratio: 1.63; object-fit: cover; }
   .section {
     padding: 42px 0;
   }
