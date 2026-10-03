@@ -33,42 +33,49 @@
       type="font/ttf"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261003-5" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header wrap">
       <a class="wordmark" href="#main" aria-label="Prajwal Kumar K home"
-        >prajwal<span aria-hidden="true">.</span></a
+        >Prajwal</a
       >
       <nav aria-label="Main navigation">
-        <a href="#work">Work</a><a href="#interests">Interests</a
+        <a href="#work">Work</a><a href="#research">Research</a
         ><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
     </header>
     <main id="main" class="wrap">
       <section class="hero" aria-labelledby="intro">
-        <p class="intro-label">Computer science, software &amp; AI</p>
-        <h1 id="intro">Prajwal Kumar K<span aria-hidden="true">.</span></h1>
-        <p class="hero-copy">
-          I like building things and figuring out how they work, from algorithms
-          and systems to strategic games and machine learning.
-        </p>
-        <div class="hero-links">
-          <a class="button" href="#work"
-            >Explore work <span aria-hidden="true">↘</span></a
-          ><a href="assets/prajwal-kumar-k-sde.pdf"
-            >Resume <span aria-hidden="true">↗</span></a
-          ><a href="https://github.com/Prajwal-k-tech"
-            >GitHub <span aria-hidden="true">↗</span></a
-          >
+        <div class="hero-content">
+          <p class="intro-label">CS undergraduate · IIIT Kottayam</p>
+          <h1 id="intro">Prajwal Kumar K<span aria-hidden="true">.</span></h1>
+          <p class="hero-copy">
+            I like getting into the details of a hard problem and building
+            something to test an idea.
+          </p>
+          <div class="hero-links">
+            <a class="button" href="#work"
+              >Explore work <span aria-hidden="true">↘</span></a
+            ><a href="assets/prajwal-kumar-k-resume.pdf"
+              >Resume <span aria-hidden="true">↗</span></a
+            ><a href="https://github.com/Prajwal-k-tech"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
+        <img
+          class="hero-portrait"
+          src="assets/prajwal-portrait.webp"
+          alt="Prajwal Kumar K"
+          width="900"
+          height="1150"
+          fetchpriority="high"
+        />
       </section>
       <section id="work" class="section" aria-labelledby="work-title">
         <h2 id="work-title">Selected work</h2>
-        <p class="section-intro">
-          Projects across software, algorithms, systems and machine learning.
-        </p>
         <div class="project-grid">
           <article class="project">
             <a
@@ -76,10 +83,10 @@
               href="https://battle-cp.tech/"
               aria-label="Play BattleCP"
               ><img
-                src="assets/battlecp.webp"
-                alt="BattleCP's pixel-art interface, with Start and Join match controls"
-                width="1200"
-                height="597"
+                src="assets/battlecp-game.webp"
+                alt="A BattleCP match in progress, with ships, a Codeforces problem panel and the game board"
+                width="768"
+                height="378"
                 fetchpriority="high"
             /></a>
             <div class="project-heading">
@@ -112,14 +119,14 @@
           </article>
           <article class="project">
             <a
-              class="project-image"
+              class="project-image bluff-project-image"
               href="https://github.com/Prajwal-k-tech/bluff"
               aria-label="Explore Bluff source"
               ><img
-                src="assets/bluff.webp"
-                alt="Bluff's playable local prototype, showing the alias entry and game controls"
-                width="1000"
-                height="625"
+                src="assets/bluff-game.webp"
+                alt="A Bluff hand in progress against the HybridHead bot, with cards and bluff or pass controls"
+                width="915"
+                height="800"
                 loading="lazy"
             /></a>
             <div class="project-heading">
@@ -139,26 +146,33 @@
               >
             </div>
             <details>
-              <summary>What the evaluation establishes</summary>
+              <summary>Evaluation notes</summary>
               <p>
-                Local experiments compare components using seeded synthetic
-                opponents and held-out conditions. Some promising variants
-                failed game-level promotion gates. Bounded micro-game solver
-                results are separate from full-deck play, and the current work
-                does not establish generalization to human opponents. The public
-                repository may lag the local prototype pictured here.
+                Experiments compare agent variants against scripted opponents
+                over seeded matches. The current evaluation is synthetic; human
+                play and broader generalization are not established.
               </p>
             </details>
           </article>
           <article class="project text-project">
+            <a
+              class="project-image"
+              href="https://github.com/Prajwal-k-tech/drishti-xai"
+              aria-label="View Drishti-XAI source"
+              ><img
+                src="assets/drishti-xai-prototype.webp"
+                alt="Drishti-XAI prototype showing an explainability view with Grad-CAM and lesion evidence"
+                width="1840"
+                height="1010"
+                loading="lazy"
+            /></a>
             <div class="project-heading">
               <h3>Drishti-XAI</h3>
               <span class="status">Research prototype</span>
             </div>
             <p>
-              I built the MATLAB/Python prototype and evaluation pipeline
-              for a team diabetic-retinopathy research project. External testing exposed a substantial
-              transfer gap, documented alongside the internal results.
+              I built the MATLAB/Python prototype and evaluation pipeline for a
+              team diabetic-retinopathy research project.
             </p>
             <p class="stack">MATLAB / Python / PyTorch / Simulink</p>
             <div class="finding">
@@ -187,6 +201,17 @@
             </details>
           </article>
           <article class="project text-project">
+            <a
+              class="project-image pokeforge-image"
+              href="https://github.com/Prajwal-k-tech/PokeForge"
+              aria-label="View PokeForge source"
+              ><img
+                src="assets/pokeforge-battle.webp"
+                alt="A Pokémon Showdown battle replay used while developing PokeForge baselines"
+                width="1280"
+                height="400"
+                loading="lazy"
+            /></a>
             <div class="project-heading">
               <h3>PokeForge</h3>
               <span class="status">In progress</span>
@@ -210,13 +235,10 @@
             <details>
               <summary>Scope of the work</summary>
               <p>
-                The earlier educational prototype compares MLP and Transformer
-                policies on heuristic labels. Its small pilot does not establish
-                competitive strength. Current baseline reproduction uses
-                isolated environments and pinned artifacts; benchmark-server
-                conformance, opponent-adaptation results and public ladder
-                performance remain unverified. FoulPlay and Metamon are
-                attributed third-party baselines.
+                The current focus is reproducible comparison against pinned
+                third-party baselines. Competitive strength, benchmark-server
+                conformance and public ladder performance have not been
+                evaluated.
               </p>
             </details>
           </article>
@@ -252,16 +274,17 @@
         </div>
       </section>
       <section
-        id="interests"
+        id="research"
         class="section research"
         aria-labelledby="research-title"
       >
         <div>
-          <h2 id="research-title">What keeps<br />me curious</h2>
+          <p id="interests" class="intro-label">Research</p>
+          <h2 id="research-title">Research<br />interests</h2>
           <p>
-            I like problems that reward careful reasoning and building things
-            to test an idea. My interests range from algorithms and systems to
-            strategic games, machine learning and data science.
+            I’m drawn to questions where careful models meet working systems.
+            I like exploring a topic by implementing ideas, testing them, and
+            examining where they hold up.
           </p>
         </div>
         <div class="questions">
@@ -269,21 +292,21 @@
             <h3>Algorithms and systems</h3>
             <p>
               Competitive programming, data structures and algorithms, and
-              systems programming in C++ and Rust.
+              low-level systems work in C++ and Rust.
             </p>
           </article>
           <article>
             <h3>Strategic decisions</h3>
             <p>
-              Game theory is the one I keep returning to: incentives, hidden
-              information and the many possible strategies.
+              Game theory, especially strategic interaction, imperfect
+              information, and how incentives shape decisions.
             </p>
           </article>
           <article>
             <h3>Learning from data</h3>
             <p>
-              Machine learning and deep learning, with a growing interest in
-              data science and building sound foundations.
+              Machine learning, deep learning, and data science, supported by
+              a growing foundation in mathematics and empirical evaluation.
             </p>
           </article>
         </div>
@@ -293,8 +316,7 @@
           <h2 id="about-title">A little background</h2>
           <p>
             I’m studying Computer Science and Engineering at IIIT Kottayam and
-            expect to graduate in 2028. I enjoy moving between building
-            software and solving algorithmic problems.
+            expect to graduate in 2028.
           </p>
           <p>
             I lived in Germany from 2005 to 2014 and speak German, alongside
@@ -304,7 +326,7 @@
         <div class="background">
           <article>
             <h3>Full-stack development</h3>
-            <p class="meta">CIO Mogul / Dec 2025 - Mar 2026</p>
+            <p class="meta">CIO Mogul / Dec 2025 - Apr 2026</p>
             <p>
               Magazine websites, reusable interfaces and editorial
               administration backed by Supabase and PostgreSQL.
@@ -349,14 +371,20 @@
           <div class="rating-feature" aria-live="polite">
             <div>
               <span class="eyebrow">Codeforces</span>
-              <p class="rating-value" id="cf-rating">Loading</p>
-              <p class="rating-caption" id="cf-caption">Current rating · peak 1221</p>
+              <p class="rating-value" id="cf-rating">1221</p>
+              <p class="rating-caption" id="cf-caption">
+                Current rating · peak 1221
+              </p>
             </div>
             <a href="https://codeforces.com/profile/oGhostyyy"
               >View profile <span aria-hidden="true">↗</span></a
             >
           </div>
-          <div class="profile-links" aria-label="Competitive programming profiles">
+          <div
+            class="profile-links"
+            role="group"
+            aria-label="Competitive programming profiles"
+          >
             <a href="https://leetcode.com/u/prajwal_k_k_/"
               >LeetCode <span aria-hidden="true">↗</span></a
             >
@@ -389,8 +417,8 @@
           <h2 id="outside-title">A few other<br />interests</h2>
         </div>
         <p>
-          Away from CS, I play basketball, go trekking and travelling, and enjoy
-          video games, poker and the card game Bluff.
+          Away from CS, I play basketball, go trekking and travelling, and
+          enjoy video games, Pokémon, poker, and the card game Bluff.
         </p>
       </section>
       <section
