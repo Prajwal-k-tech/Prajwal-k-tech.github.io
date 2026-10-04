@@ -10,7 +10,7 @@ The distinctive element is the warm portrait and arched crop. The rest of the pa
 
 The previous version had a system-dependent serif display font mixed with Geist, orange micro-labels above most headings, a duplicate first-name wordmark, and several equally large sections with similar split layouts. The annual CTF rank could become stale. Supporting projects appeared as smaller links. Codeforces had a static fallback incorrectly labeled as current.
 
-- Use self-hosted Geist for the whole page. One h1 introduces Prajwal; five h2 sections organize the page; h3 and h4 headings organize projects and supporting evidence.
+- Use self-hosted Geist for the whole page. One h1 introduces Prajwal; h2 sections organize the page; h3 and h4 headings organize projects and supporting evidence.
 - Center the four primary navigation links, enlarge them and keep them accessible while scrolling. Mark the current reading section with a single underline.
 - Keep primary text, secondary text and metadata distinct through size and weight. Use peach for the primary button, contact address, focus and modest link cues. No orange section eyebrows.
 - Give the real project screenshots the same 8:5 frame without cutting off the interface. Keep the portrait bounded at every width.
@@ -19,6 +19,9 @@ The previous version had a system-dependent serif display font mixed with Geist,
 - CTF highlights are historical event results with event years and team attribution. Current season ranks and points belong on CTFtime.
 - Codeforces uses its official JSONP API. When it fails or returns unusable data, the page shows the verified personal best rather than claiming stale data is current. Other online judges remain direct profile links.
 - Preserve prototype and work-in-progress labels, private-source boundaries, team contributions and Drishti's external evaluation result.
+- Keep the academic subtitle above the name, followed by the work button and Resume, GitHub and LinkedIn links. Mobile separates the work button from the three profile links.
+- Experience links to Edhanta and the three CIO magazine sites. Stack labels are supported by the repositories' dependency manifests; no private source is linked.
+- Put seven short favorite quotes after Contact. Alternate the text and simple original SVG motifs, using the existing palette and no new image downloads. Link each attribution to its source; retain the short excerpts rather than full passages.
 
 ## Tokens
 

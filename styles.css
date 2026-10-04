@@ -103,12 +103,6 @@ h4 { font-size: 19px; line-height: 1.35; letter-spacing: -0.02em; }
 }
 .hero-content { min-width: 0; }
 .intro-label { margin-bottom: 22px; font-size: 16px; }
-.hero-copy {
-  max-width: 31em;
-  margin: 26px 0 32px;
-  font-size: clamp(20px, 1.9vw, 24px);
-  line-height: 1.5;
-}
 .hero-portrait {
   display: block;
   width: 100%;
@@ -119,7 +113,7 @@ h4 { font-size: 19px; line-height: 1.35; letter-spacing: -0.02em; }
   border-radius: 48% 48% 8px 8px;
   background: var(--deep);
 }
-.hero-links { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; font-size: 16px; }
+.hero-links { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 36px; font-size: 16px; }
 .hero-links > a:not(.button) {
   display: inline-flex;
   align-items: center;
@@ -256,6 +250,22 @@ details p { margin-top: 10px; max-width: 65ch; }
 .contact-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 28px; margin-top: 26px; font-size: 15px; }
 .contact-links a, .contact-links span { display: inline-flex; min-height: 36px; align-items: center; gap: 6px; text-decoration: none; }
 .contact-links > span { color: var(--secondary); }
+.resume-downloads { margin-top: 32px; }
+.resume-downloads h3 { font-size: 19px; }
+.resume-downloads .artifact-links { margin-top: 8px; }
+.quote-list { max-width: 1050px; margin: 40px auto 0; }
+.quote { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: center; gap: 48px; margin: 0; padding: 30px 0; }
+.quote + .quote { border-top: 1px solid var(--rule); }
+.quote:nth-child(even) { grid-template-columns: minmax(0, 1fr) 150px; text-align: right; }
+.quote:nth-child(even) .quote-art { grid-column: 2; grid-row: 1; }
+.quote:nth-child(even) > div { grid-column: 1; grid-row: 1; }
+.quote-art { display: block; width: 100%; fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.65; }
+.quote blockquote { margin: 0; }
+.quote blockquote p { color: var(--text); font-size: clamp(21px, 2.3vw, 30px); line-height: 1.45; letter-spacing: -0.025em; text-wrap: balance; }
+.quote figcaption { margin-top: 14px; color: var(--secondary); font-size: 14px; line-height: 1.6; }
+.quote cite { font-style: normal; }
+.quote figcaption a { text-decoration-color: var(--rule); }
+.quote figcaption a:hover { text-decoration-color: var(--accent); }
 footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 0 28px; border-top: 1px solid var(--rule); font-size: 14px; }
 footer a { display: inline-flex; align-items: center; min-height: 32px; text-decoration: none; }
 .not-found { max-width: 720px; padding: 120px 0; }
@@ -286,8 +296,8 @@ footer a { display: inline-flex; align-items: center; min-height: 32px; text-dec
   .hero-portrait { width: clamp(180px, 50vw, 230px); justify-self: center; grid-row: 1; }
   h1 { font-size: clamp(40px, 9.5vw, 64px); letter-spacing: -0.06em; }
   .intro-label { margin-bottom: 16px; font-size: 14px; }
-  .hero-copy { margin: 20px 0 24px; font-size: 20px; }
-  .hero-links { gap: 8px 24px; font-size: 15px; }
+  .hero-links { display: grid; grid-template-columns: repeat(3, max-content); gap: 14px 24px; margin-top: 28px; font-size: 15px; }
+  .hero-links > .button { grid-column: 1 / -1; justify-self: start; }
   .button { gap: 18px; padding: 12px 18px; }
   .project-grid, .questions, .about-grid, .competition-grid, .outside, .publication { grid-template-columns: 1fr; }
   .project-grid { gap: 44px; margin-top: 30px; }
@@ -305,6 +315,11 @@ footer a { display: inline-flex; align-items: center; min-height: 32px; text-dec
   .outside { gap: 18px; margin-top: 36px; padding-top: 32px; }
   .outside h3 { font-size: 23px; }
   .contact-links { gap: 8px 24px; margin-top: 20px; }
+  .quote-list { margin-top: 24px; }
+  .quote { grid-template-columns: 64px minmax(0, 1fr); gap: 20px; padding: 28px 0; }
+  .quote:nth-child(even) { grid-template-columns: minmax(0, 1fr) 64px; }
+  .quote blockquote p { font-size: 21px; text-wrap: pretty; }
+  .quote figcaption { font-size: 13px; }
   footer { font-size: 13px; }
 }
 @media (max-width: 359px) {
