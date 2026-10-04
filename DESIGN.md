@@ -1,0 +1,55 @@
+# Portfolio design
+
+## Direction
+
+A personal CS portfolio for research mentors and engineering hiring teams. Preserve the Ristretto palette, candid portrait and actual project captures. Use a clear sans-serif hierarchy, substantial project summaries and restrained interaction. Design variance 6, motion intensity 3, visual density 4.
+
+The distinctive element is the warm portrait and arched crop. The rest of the page supports reading and assessing the work. Avoid decorative labels, oversized secondary headings, animated backgrounds, technology logo walls and manufactured metrics.
+
+## Audit and decisions
+
+The previous version had a system-dependent serif display font mixed with Geist, orange micro-labels above most headings, a duplicate first-name wordmark, and several equally large sections with similar split layouts. The annual CTF rank could become stale. Supporting projects appeared as smaller links. Codeforces had a static fallback incorrectly labeled as current.
+
+- Use self-hosted Geist for the whole page. One h1 introduces Prajwal; four h2 sections organize the page; h3 and h4 headings organize projects and supporting evidence.
+- Center the four primary navigation links, enlarge them and keep them accessible while scrolling. Mark the current reading section with a single underline.
+- Keep primary text, secondary text and metadata distinct through size and weight. Use peach for the primary button, contact address, focus and modest link cues. No orange section eyebrows.
+- Give all four real project screenshots the same 8:5 frame without cutting off the interface. Keep the portrait bounded at every width.
+- Make all ten selected projects visible. The leading screenshot projects show the flagship product and research work; the second tier shows systems, tools and team projects with full descriptions, contribution context and stacks.
+- Put the publication with research. Put experience, CP, CTFs and hobbies under About. Avoid repeating the same project descriptions in those sections.
+- CTF highlights are historical event results with event years and team attribution. Current season ranks and points belong on CTFtime.
+- Codeforces uses its official JSONP API. When it fails or returns unusable data, the page shows the verified personal best rather than claiming stale data is current. Other online judges remain direct profile links.
+- Preserve prototype and work-in-progress labels, private-source boundaries, team contributions and Drishti's external evaluation result.
+
+## Tokens
+
+| Role | Value |
+| --- | --- |
+| Canvas | `#2c2525` |
+| Inset surface | `#211b1b` |
+| Primary text | `#e6d9db` |
+| Secondary text | `#c3b7b8` |
+| Peach accent | `#f38d70` |
+| Divider | `#514344` |
+
+Type: Geist Regular and Semibold, converted from the existing licensed fonts to WOFF2. H1 is fluid 40–76px; main headings 30–38px; project headings 22–26px; body 16–18px; metadata 13–14px. Container maximum 1280px. Explicit single-column layouts below 768px, with 320px reflow supported.
+
+## Stack decision
+
+The site is static HTML, CSS and two small JavaScript files. These provide native disclosures, responsive grids, local fonts, active navigation and optional API enhancement. GitHub Pages can serve them directly. A Next.js static export would still need an external server for APIs that block browser access, and would add build dependencies without solving the design issues. A framework migration is appropriate if the site develops substantial application state or multiple complex content routes.
+
+## References
+
+These are structural references, not copied layouts or endorsements.
+
+- [Brittany Chiang](https://brittanychiang.com/): strong typography, visible experience and project evidence.
+- [Lee Robinson](https://leerob.com/): direct writing and a recognizable personal visual.
+- [Andrej Karpathy](https://karpathy.ai/): research, projects and personality presented together.
+- [W3C heading structure](https://www.w3.org/WAI/tutorials/page-structure/headings/), [reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) and [target size](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html): semantic hierarchy and usable layouts.
+- [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) and [Next.js static exports](https://nextjs.org/docs/app/guides/static-exports): hosting and framework constraints.
+- [Codeforces API](https://codeforces.com/apiHelp): official JSONP support.
+
+## Interaction and maintenance
+
+Motion responds to navigation and hover. Smooth scrolling and transitions honor reduced motion. There is no scroll hijacking, automatic carousel, animation loop, tracking or form backend.
+
+Copy stays in `index.html`, grouped by commented section and project article. Keep evidence and status accurate when changing text. Project screenshots and the resume are local assets; layout and palette tokens are in `styles.css`.
