@@ -16,9 +16,9 @@ Open <http://127.0.0.1:4173>.
 - `styles.css` contains palette tokens, the type scale, layout and responsive rules.
 - `profiles.js` refreshes Codeforces from the official JSONP API. The HTML fallback is a personal best, not a stale current rating. Other judges link directly to their profiles.
 - `site.js` marks the current navigation section. The content and anchor links work without JavaScript.
-- `assets/` contains the portrait, actual project screenshots, local fonts and downloadable resume.
-- Contact links to separate software engineering and AI/research resume PDFs. The hero Resume link opens the software engineering version; PDF query strings use the first 12 characters of each file's SHA-256 hash.
-- Favorite quotes follow Contact, with linked attributions and original SVG line drawings. Keep excerpts short and check attribution when editing.
+- `assets/` contains the portrait, actual project screenshots, local fonts and downloadable resumes.
+- Contact links to separate software engineering, AI/research and cybersecurity resume PDFs. Outbound links and resume PDFs open in a new tab, while section navigation stays on the page. The hero Resume link opens the software engineering version; PDF query strings use the first 12 characters of each file's SHA-256 hash.
+- Favorite quotes follow the personal interests within About, with linked attributions and original SVG line drawings. Keep excerpts short and check attribution when editing.
 - `DESIGN.md` explains the design audit, information architecture and stack choice.
 
 The portfolio uses the Ristretto palette and self-hosted Geist. Six featured projects and six group projects each have a real interface, terminal capture or recorded experiment image. All copy and direct links remain in the page. Preserve team attribution, private-source boundaries, prototype labels and evaluation scope when editing. CTF highlights refer to specific historical events; live season standings stay on CTFtime.

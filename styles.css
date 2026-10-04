@@ -253,6 +253,8 @@ details p { margin-top: 10px; max-width: 65ch; }
 .resume-downloads { margin-top: 32px; }
 .resume-downloads h3 { font-size: 19px; }
 .resume-downloads .artifact-links { margin-top: 8px; }
+.quotes { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--rule); }
+.quotes > h3 { font-size: clamp(26px, 2.7vw, 34px); line-height: 1.25; }
 .quote-list { max-width: 1050px; margin: 40px auto 0; }
 .quote { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: center; gap: 48px; margin: 0; padding: 30px 0; }
 .quote + .quote { border-top: 1px solid var(--rule); }
@@ -315,6 +317,7 @@ footer a { display: inline-flex; align-items: center; min-height: 32px; text-dec
   .outside { gap: 18px; margin-top: 36px; padding-top: 32px; }
   .outside h3 { font-size: 23px; }
   .contact-links { gap: 8px 24px; margin-top: 20px; }
+  .quotes { margin-top: 36px; padding-top: 32px; }
   .quote-list { margin-top: 24px; }
   .quote { grid-template-columns: 64px minmax(0, 1fr); gap: 20px; padding: 28px 0; }
   .quote:nth-child(even) { grid-template-columns: minmax(0, 1fr) 64px; }

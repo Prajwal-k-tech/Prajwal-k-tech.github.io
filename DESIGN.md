@@ -21,7 +21,7 @@ The previous version had a system-dependent serif display font mixed with Geist,
 - Preserve prototype and work-in-progress labels, private-source boundaries, team contributions and Drishti's external evaluation result.
 - Keep the academic subtitle above the name, followed by the work button and Resume, GitHub and LinkedIn links. Mobile separates the work button from the three profile links.
 - Experience links to Edhanta and the three CIO magazine sites. Stack labels are supported by the repositories' dependency manifests; no private source is linked.
-- Put seven short favorite quotes after Contact. Alternate the text and simple original SVG motifs, using the existing palette and no new image downloads. Link each attribution to its source; retain the short excerpts rather than full passages.
+- Put seven short favorite quotes after the personal interests within About. Alternate the text and original SVG motifs, using the existing palette and no new image downloads. Link each attribution to its source; retain short excerpts rather than full passages.
 
 ## Tokens
 
