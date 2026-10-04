@@ -10,11 +10,11 @@ The distinctive element is the warm portrait and arched crop. The rest of the pa
 
 The previous version had a system-dependent serif display font mixed with Geist, orange micro-labels above most headings, a duplicate first-name wordmark, and several equally large sections with similar split layouts. The annual CTF rank could become stale. Supporting projects appeared as smaller links. Codeforces had a static fallback incorrectly labeled as current.
 
-- Use self-hosted Geist for the whole page. One h1 introduces Prajwal; four h2 sections organize the page; h3 and h4 headings organize projects and supporting evidence.
+- Use self-hosted Geist for the whole page. One h1 introduces Prajwal; five h2 sections organize the page; h3 and h4 headings organize projects and supporting evidence.
 - Center the four primary navigation links, enlarge them and keep them accessible while scrolling. Mark the current reading section with a single underline.
 - Keep primary text, secondary text and metadata distinct through size and weight. Use peach for the primary button, contact address, focus and modest link cues. No orange section eyebrows.
-- Give all four real project screenshots the same 8:5 frame without cutting off the interface. Keep the portrait bounded at every width.
-- Make all ten selected projects visible. The leading screenshot projects show the flagship product and research work; the second tier shows systems, tools and team projects with full descriptions, contribution context and stacks.
+- Give the real project screenshots the same 8:5 frame without cutting off the interface. Keep the portrait bounded at every width.
+- Show six featured projects under “Some of my work” and six team projects under “Some of my group projects”. Every entry has an actual interface, terminal capture, repository artifact or visualization of recorded experiment results. Both use the same two-column card grid and image dimensions, collapsing to one column on mobile.
 - Put the publication with research. Put experience, CP, CTFs and hobbies under About. Avoid repeating the same project descriptions in those sections.
 - CTF highlights are historical event results with event years and team attribution. Current season ranks and points belong on CTFtime.
 - Codeforces uses its official JSONP API. When it fails or returns unusable data, the page shows the verified personal best rather than claiming stale data is current. Other online judges remain direct profile links.
@@ -53,3 +53,11 @@ These are structural references, not copied layouts or endorsements.
 Motion responds to navigation and hover. Smooth scrolling and transitions honor reduced motion. There is no scroll hijacking, automatic carousel, animation loop, tracking or form backend.
 
 Copy stays in `index.html`, grouped by commented section and project article. Keep evidence and status accurate when changing text. Project screenshots and the resume are local assets; layout and palette tokens are in `styles.css`.
+
+## Image provenance
+
+- BattleCP, Bluff, PokeForge and Drishti-XAI retain the existing actual interface captures.
+- To-Do-or-Die is a real terminal capture of adding and listing sample tasks in an isolated temporary filesystem; no systemd timer or effects were enabled.
+- LurajBot uses both of Prajwal’s supplied February and April 2022 Discord screenshots. CSS crops the unused right-hand space and scales them proportionally side by side. The original PNGs remain unchanged.
+- Algorithima and KOJ are captures of their public sorting visualizer and problem archive.
+- Anchor pairs home and paced-breathing screenshots from the current debug APK on an API 35 emulator; legacy PTSD Coach reference images are excluded. ZeroKlue shows the local /verify prototype route with developer tooling hidden and no wallet connection. KPlaceNet visualizes the recorded L4 held-out OSV-5M experiment from docs/results/l4_adaptive_cells.md; RayTray uses its repository’s rendered scene.

@@ -19,6 +19,13 @@ Open <http://127.0.0.1:4173>.
 - `assets/` contains the portrait, actual project screenshots, local fonts and downloadable resume.
 - `DESIGN.md` explains the design audit, information architecture and stack choice.
 
-The portfolio uses the Ristretto palette and self-hosted Geist. The four main captures and six additional project summaries are visible on the page. Preserve team attribution, private-source boundaries, prototype labels and evaluation scope when editing. CTF highlights refer to specific historical events; live season standings stay on CTFtime.
+The portfolio uses the Ristretto palette and self-hosted Geist. Six featured projects and six group projects each have a real interface, terminal capture or recorded experiment image. All copy and direct links remain in the page. Preserve team attribution, private-source boundaries, prototype labels and evaluation scope when editing. CTF highlights refer to specific historical events; live season standings stay on CTFtime.
 
 There is no build step, API key, scraping proxy, analytics or application server.
+
+To edit project text, open `index.html` and search for the project's heading. Each adjacent `<article>` contains its image, description, status, stack and available links. Keep these two sections and their order:
+
+1. **Some of my work:** BattleCP, Bluff, PokeForge, Drishti-XAI, To-Do-or-Die, LurajBot.
+2. **Some of my group projects:** Algorithima, KOJ, Zero-Klue, Anchor, KPlaceNet, RayTray.
+
+Both sections share the same two-column card and image layout. Drishti-XAI's source is private, so its card shows that status without a source link.

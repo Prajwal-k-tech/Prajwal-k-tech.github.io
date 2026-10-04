@@ -2,7 +2,7 @@
 (() => {
   if (!("IntersectionObserver" in window)) return;
   const links = [...document.querySelectorAll(".site-header nav a")];
-  const sections = links.map((link) => document.querySelector(link.hash));
+  const sections = [...document.querySelectorAll("main > .section")];
   const visible = new Set();
 
   const observer = new IntersectionObserver((entries) => {
@@ -12,7 +12,8 @@
     }
     const current = sections.slice().reverse().find((section) => visible.has(section));
     for (const link of links) {
-      if (current?.id === link.hash.slice(1)) {
+      const currentId = current?.id === "group-work" ? "work" : current?.id;
+      if (currentId === link.hash.slice(1)) {
         link.setAttribute("aria-current", "location");
       } else {
         link.removeAttribute("aria-current");

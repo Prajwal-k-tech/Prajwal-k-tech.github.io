@@ -16,7 +16,7 @@
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="preload" href="assets/fonts/geist-regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/geist-semibold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="styles.css?v=20261004-2" />
+    <link rel="stylesheet" href="styles.css?v=20261004-4" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -35,11 +35,11 @@
           <p class="intro-label">CS undergraduate at IIIT Kottayam</p>
           <h1 id="intro">Prajwal Kumar K</h1>
           <p class="hero-copy">
-            I build software and enjoy hard problems in algorithms, systems,
-            game theory and machine learning.
+            I like getting into the details of a hard problem and building
+            something to test an idea.
           </p>
           <div class="hero-links">
-            <a class="button" href="#work">Explore work <span aria-hidden="true">↘</span></a>
+            <a class="button" href="#work">See my work <span aria-hidden="true">↘</span></a>
             <a href="assets/prajwal-kumar-k-resume.pdf?v=20261004-1">Resume <span class="external" aria-hidden="true">↗</span></a>
             <a href="https://github.com/Prajwal-k-tech">GitHub <span class="external" aria-hidden="true">↗</span></a>
           </div>
@@ -47,9 +47,9 @@
         <img class="hero-portrait" src="assets/prajwal-portrait.webp" alt="Prajwal Kumar K" width="900" height="1150" fetchpriority="high" />
       </section>
 
-      <!-- Selected work: each article owns its image, copy, status and links. -->
+      <!-- Featured work: edit each project's image, copy, status and links here. -->
       <section id="work" class="section" aria-labelledby="work-title">
-        <h2 id="work-title">Selected work</h2>
+        <h2 id="work-title">Some of my work</h2>
         <p class="section-intro">Projects across systems, games and machine learning.</p>
         <div class="project-grid">
           <article class="project">
@@ -110,44 +110,6 @@
             </details>
           </article>
           <article class="project">
-            <figure class="project-image">
-              <img src="assets/drishti-xai-prototype.webp" alt="Drishti-XAI's explainability view with Grad-CAM, lesion evidence and clinician review controls" width="1840" height="1010" loading="lazy" />
-            </figure>
-            <div class="project-heading">
-              <h3>Drishti-XAI</h3>
-              <span class="status">Research prototype</span>
-            </div>
-            <p>
-              I built the MATLAB/Python prototype and evaluation pipeline for a
-              team diabetic-retinopathy research project.
-            </p>
-            <p class="stack">MATLAB / Python / PyTorch / Simulink</p>
-            <div class="finding">
-              <strong>What the evaluation showed</strong>
-              <p>
-                Strong internal results did not transfer to an external
-                population. Domain shift became the central evaluation lesson.
-              </p>
-            </div>
-            <details>
-              <summary>Evaluation and limitations</summary>
-              <p>
-                The current MATLAB pipeline reports sensitivity 0.908 and
-                specificity 0.877 on a sealed APTOS test split (733 images).
-                With its threshold unchanged on Messidor-2, sensitivity falls to
-                0.363, specificity is 0.865, and AUC is 0.666. These are
-                separate internal and external evaluations, not clinical
-                deployment evidence. The repository is private; this summary is
-                based on the project's current evaluation reports.
-              </p>
-              <p>
-                Quality gating, vessel/lesion analysis, calibration and Grad-CAM
-                support the workflow. Clinician assessment and clinical
-                validation remain open.
-              </p>
-            </details>
-          </article>
-          <article class="project">
             <a class="project-image" href="https://github.com/Prajwal-k-tech/PokeForge" aria-label="View PokeForge source">
               <img src="assets/pokeforge-battle.webp" alt="A Pokémon Showdown battle replay showing two active Amoonguss and the battle state" width="550" height="310" loading="lazy" />
             </a>
@@ -181,41 +143,152 @@
               </p>
             </details>
           </article>
+          <article class="project">
+            <figure class="project-image">
+              <img src="assets/drishti-xai-prototype.webp" alt="Drishti-XAI's explainability view with Grad-CAM, lesion evidence and clinician review controls" width="1840" height="1010" loading="lazy" />
+            </figure>
+            <div class="project-heading">
+              <h3>Drishti-XAI</h3>
+              <span class="status">Research prototype</span>
+            </div>
+            <p>
+              I built the MATLAB/Python prototype and evaluation pipeline for a
+              team diabetic-retinopathy research project.
+            </p>
+            <p class="stack">MATLAB / Python / PyTorch / Simulink</p>
+            <div class="finding">
+              <strong>What the evaluation showed</strong>
+              <p>
+                Strong internal results did not transfer to an external
+                population. Domain shift became the central evaluation lesson.
+              </p>
+            </div>
+            <div class="artifact-links"><span>Source private</span></div>
+            <details>
+              <summary>Evaluation and limitations</summary>
+              <p>
+                The current MATLAB pipeline reports sensitivity 0.908 and
+                specificity 0.877 on a sealed APTOS test split (733 images).
+                With its threshold unchanged on Messidor-2, sensitivity falls to
+                0.363, specificity is 0.865, and AUC is 0.666. These are
+                separate internal and external evaluations, not clinical
+                deployment evidence. The repository is private; this summary is
+                based on the project's current evaluation reports.
+              </p>
+              <p>
+                Quality gating, vessel/lesion analysis, calibration and Grad-CAM
+                support the workflow. Clinician assessment and clinical
+                validation remain open.
+              </p>
+            </details>
+          </article>
+          <article class="project">
+            <a class="project-image terminal-project-image" href="https://github.com/Prajwal-k-tech/to-do-or-die" aria-label="Explore To-Do-or-Die source">
+              <img src="assets/to-do-or-die-terminal.webp" alt="To-Do-or-Die running in a terminal, adding a deadline and listing tasks" width="1200" height="750" loading="lazy" />
+            </a>
+            <div class="project-heading">
+              <h3>To-Do-or-Die</h3>
+              <span class="status">Linux utility</span>
+            </div>
+            <p>A Rust CLI that escalates deadline reminders through notifications, audio and desktop effects. Optional file-deletion consequences are disabled by default.</p>
+            <p class="stack">Rust / Linux / systemd</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/to-do-or-die">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+            <details>
+              <summary>Safety and scope</summary>
+              <p>New installs use dry-run mode with deletion disabled. Path guards, blocklists and audit logs support explicitly configured enforcement. The broader extreme mode remains future scope.</p>
+            </details>
+          </article>
+          <article class="project">
+            <a class="project-image discord-project-image" href="https://github.com/Prajwal-k-tech/LurajBot" aria-label="Explore LurajBot source">
+              <span class="discord-capture"><img src="assets/lurajbot-april-2022.png" alt="Historical Discord screenshots from February and April 2022 showing LurajBot responding to meme commands" width="1054" height="677" loading="lazy" /></span>
+              <span class="discord-capture"><img src="assets/lurajbot-february-2022.png" alt="" width="1057" height="724" loading="lazy" /></span>
+            </a>
+            <div class="project-heading">
+              <h3>LurajBot</h3>
+            </div>
+            <p>I got into coding in 8th grade because I wanted to pull a joke on a friend: I turned him into a Discord bot for our server.</p>
+            <p class="stack">Python / discord.py</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/LurajBot">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
-        <div class="more-work">
-          <h3>Systems, tools and team projects</h3>
-          <div class="more-work-grid">
-            <article>
-              <div class="brief-heading"><h4>KOJ</h4><span class="status">Team project</span></div>
-              <p>An online judge built with a team at IIIT Kottayam. I worked on contest lifecycle, staff workflows, submission dispatch validation and per-test verdict persistence.</p>
-              <p class="stack">Next.js / TypeScript / PostgreSQL</p>
-            </article>
-            <article>
-              <div class="brief-heading"><h4><a href="https://github.com/Prajwal-k-tech/silconspire.cpp">SiliconSpire <span class="external" aria-hidden="true">↗</span></a></h4><span class="status">Optimization</span></div>
-              <p>Quadratic Assignment Problem solvers combining Grey Wolf Optimization with Tabu Search, with C++ and Rust implementations for comparative experiments.</p>
-              <p class="stack">C++ / Rust / Metaheuristics</p>
-            </article>
-            <article>
-              <div class="brief-heading"><h4><a href="https://github.com/Openverse-iiitk/DSA-Website">Algorithma <span class="external" aria-hidden="true">↗</span></a></h4><span class="status">Team project</span></div>
-              <p>Interactive DSA visualizations through Openverse. I co-presented the team project at OOSC 3.0, IIT Kanpur, and contribute through the club's technical leadership.</p>
-              <p class="stack">JavaScript / React / Framer Motion</p>
-            </article>
-            <article>
-              <div class="brief-heading"><h4><a href="https://github.com/Prajwal-k-tech/to-do-or-die">To-Do-or-Die <span class="external" aria-hidden="true">↗</span></a></h4><span class="status">Linux utility</span></div>
-              <p>A Rust CLI that escalates deadline reminders through a systemd timer. Path guards, dry-run defaults and audit logs support optional file-deletion consequences.</p>
-              <p class="stack">Rust / Linux / systemd</p>
-            </article>
-            <article>
-              <div class="brief-heading"><h4><a href="https://github.com/Prajwal-k-tech/RayTray">RayTray <span class="external" aria-hidden="true">↗</span></a></h4><span class="status">Team project</span></div>
-              <p>A C++ path tracer based on Ray Tracing in One Weekend, with serial and OpenMP renderers for exploring rendering and parallel execution.</p>
-              <p class="stack">C++ / OpenMP / Computer graphics</p>
-            </article>
-            <article>
-              <div class="brief-heading"><h4><a href="https://github.com/Prajwal-k-tech/Anchor">Anchor <span class="external" aria-hidden="true">↗</span></a></h4><span class="status">Team prototype</span></div>
-              <p>Team Hogorithm's trauma-support prototype, awarded Best Software at IEEE MACE .hack(); '26. I contributed Kotlin safety routing, domain models, UI and tests.</p>
-              <p class="stack">Kotlin / Android</p>
-            </article>
-          </div>
+      </section>
+
+      <!-- Group projects: hackathons, coursework and club work, with team attribution. -->
+      <section id="group-work" class="section" aria-labelledby="group-work-title">
+        <h2 id="group-work-title">Some of my group projects</h2>
+        <p class="section-intro">Projects built with friends and teams through hackathons, coursework and club work.</p>
+        <div class="project-grid">
+          <article class="project">
+            <a class="project-image" href="https://algorithima.web.app/" aria-label="Open Algorithima">
+              <img src="assets/algorithima-visualizer.webp" alt="Algorithima's sorting visualizer showing algorithm steps, controls and an array of bars" width="1200" height="750" loading="lazy" />
+            </a>
+            <div class="project-heading"><h3>Algorithima</h3><span class="status">Openverse</span></div>
+            <p>Interactive DSA visualizations built through Openverse. Our team gave a lightning talk at OOSC 3.0 and presented the tool at T4E 2025, IIT Madras. Selected for OOSC 4.0.</p>
+            <p class="stack">JavaScript / React / Framer Motion</p>
+            <div class="artifact-links">
+              <a href="https://algorithima.web.app/">Explore <span class="external" aria-hidden="true">↗</span></a>
+              <a href="https://github.com/Openverse-iiitk/DSA-Website">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://koj-peach.vercel.app/" aria-label="Open KOJ">
+              <img src="assets/koj-problems.webp" alt="KOJ's public problem archive with search, topic filters and programming problems" width="1200" height="750" loading="lazy" />
+            </a>
+            <div class="project-heading"><h3>KOJ</h3><span class="status">Team project</span></div>
+            <p>An online judge built with a team at IIIT Kottayam. I worked on contest lifecycle, staff workflows, submission dispatch validation and per-test verdict persistence.</p>
+            <p class="stack">Next.js / TypeScript / PostgreSQL</p>
+            <div class="artifact-links">
+              <a href="https://koj-peach.vercel.app/">Open judge <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://github.com/Prajwal-k-tech/Code-kal" aria-label="Explore ZeroKlue source">
+              <img src="assets/zeroklue-prototype.webp" alt="ZeroKlue's local prototype interface for student-status proof generation" width="1200" height="774" loading="lazy" />
+            </a>
+            <div class="project-heading"><h3>Zero-Klue</h3><span class="status">Hackathon prototype</span></div>
+            <p>A student-status proof-generation prototype using Google JWTs and Noir. On-chain credential verification remains unfinished.</p>
+            <p class="stack">Next.js / Solidity / Noir</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/Code-kal">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://github.com/Prajwal-k-tech/Anchor" aria-label="Explore Anchor source">
+              <img src="assets/anchor-app.webp" alt="Actual Anchor Android prototype screens: the ANCHOR NOW home and paced-breathing session" width="1200" height="750" loading="lazy" />
+            </a>
+            <div class="project-heading"><h3>Anchor</h3><span class="status">Team prototype</span></div>
+            <p>Team Hogorithm's trauma-support prototype, awarded Best Software at IEEE MACE .hack(); '26. I contributed Kotlin safety routing, domain models, UI and tests.</p>
+            <p class="stack">Kotlin / Android</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/Anchor">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://github.com/Asterisk-Hunter/KPlaceNet" aria-label="Explore KPlaceNet source">
+              <img src="assets/kplacenet-experiments.webp" alt="Recorded KPlaceNet L4 comparison of geographic cell methods, showing top-1 accuracy within 200 km on a held-out OSV-5M subset" width="1200" height="783" loading="lazy" />
+            </a>
+            <div class="project-heading"><h3>KPlaceNet</h3><span class="status">Research prototype</span></div>
+            <p>A team image-geolocation project using ResNet, quadtree geographic cells and transfer learning. Experiments compare data efficiency and adaptive cell methods.</p>
+            <p class="stack">Python / PyTorch / Computer vision</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Asterisk-Hunter/KPlaceNet">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <a class="project-image" href="https://github.com/Prajwal-k-tech/RayTray" aria-label="Explore RayTray source">
+              <img src="assets/raytray-render.webp" alt="RayTray's rendered scene of diffuse, metal and glass spheres" width="400" height="266" loading="lazy" />
+            </a>
+            <div class="project-heading"><h3>RayTray</h3><span class="status">Course project</span></div>
+            <p>A completed parallel-computing team project based on Ray Tracing in One Weekend, with serial and OpenMP renderers.</p>
+            <p class="stack">C++ / OpenMP / Computer graphics</p>
+            <div class="artifact-links">
+              <a href="https://github.com/Prajwal-k-tech/RayTray">Source <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -326,7 +399,7 @@
           <h3>Away from the keyboard</h3>
           <div class="outside-copy">
             <p>I enjoy basketball, trekking and travel. I’m into fiction and a huge Star Wars nerd, and I enjoy video games, Pokémon, poker and other card games.</p>
-            <p>I enjoy ricing my OS (I use Arch btw) and take more typing tests than is reasonable. <a href="https://monkeytype.com/profile/oGhostyyy">Monkeytype <span class="external" aria-hidden="true">↗</span></a></p>
+            <p>I enjoy ricing my OS (I use Arch btw). I do more typing tests than a normal person should. <a href="https://monkeytype.com/profile/oGhostyyy">Monkeytype <span class="external" aria-hidden="true">↗</span></a></p>
           </div>
         </div>
       </section>
@@ -346,7 +419,7 @@
       <p>Prajwal Kumar K</p>
       <a href="#main">Back to top</a>
     </footer>
-    <script src="profiles.js?v=20261004-2" defer></script>
-    <script src="site.js?v=20261004-2" defer></script>
+    <script src="profiles.js?v=20261004-4" defer></script>
+    <script src="site.js?v=20261004-4" defer></script>
   </body>
 </html>
