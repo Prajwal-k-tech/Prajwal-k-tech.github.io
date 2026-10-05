@@ -26,6 +26,8 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 108px; }
 body {
+  position: relative;
+  isolation: isolate;
   margin: 0;
   background: var(--canvas);
   color: var(--text);
@@ -34,22 +36,17 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
-#main {
-  position: relative;
-  isolation: isolate;
-}
-#main::before {
+body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   z-index: -1;
-  inset: -80px -22vw;
+  inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 112% 8% at 105% 5%, transparent 48%, rgb(105 57 42 / .13) 48.3% 54%, rgb(203 126 75 / .08) 54.4% 60%, transparent 60.4%),
-    radial-gradient(ellipse 108% 9% at -8% 31%, transparent 49%, rgb(145 69 50 / .11) 49.3% 56%, rgb(223 148 88 / .07) 56.4% 62%, transparent 62.4%),
-    radial-gradient(ellipse 120% 10% at 108% 64%, transparent 49%, rgb(117 65 46 / .12) 49.3% 55%, rgb(219 140 81 / .07) 55.4% 62%, transparent 62.4%),
-    radial-gradient(ellipse 100% 8% at -9% 91%, transparent 50%, rgb(151 74 52 / .09) 50.3% 57%, rgb(213 131 77 / .06) 57.4% 63%, transparent 63.4%);
-  opacity: .76;
+    linear-gradient(132deg, transparent 0 17%, rgb(125 77 59 / .045) 17.1% 17.25%, transparent 17.35% 100%),
+    linear-gradient(132deg, transparent 0 77%, rgb(249 204 108 / .035) 77.1% 77.22%, transparent 77.32% 100%),
+    repeating-linear-gradient(132deg, transparent 0 118px, rgb(243 141 112 / .075) 118px 119px, transparent 119px 238px),
+    linear-gradient(132deg, #2c2525 0%, #2e2625 50%, #2b2424 100%);
 }
 ::selection { background: var(--accent); color: var(--deep); }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 5px; }
@@ -320,6 +317,12 @@ footer a { display: inline-flex; align-items: center; min-height: 32px; text-dec
   .wrap { width: calc(100% - 40px); }
   .site-header nav { min-height: 68px; gap: clamp(18px, 5.5vw, 36px); }
   .site-header a { font-size: 15px; }
+  body::before {
+    background:
+      linear-gradient(132deg, transparent 0 19%, rgb(125 77 59 / .035) 19.1% 19.25%, transparent 19.35% 100%),
+      repeating-linear-gradient(132deg, transparent 0 100px, rgb(243 141 112 / .06) 100px 101px, transparent 101px 202px),
+      linear-gradient(132deg, #2c2525 0%, #2e2625 50%, #2b2424 100%);
+  }
   .hero { grid-template-columns: 1fr; gap: 30px; padding: 32px 0 54px; }
   .hero-portrait { width: clamp(180px, 50vw, 230px); justify-self: center; grid-row: 1; }
   h1 { font-size: clamp(40px, 9.5vw, 64px); letter-spacing: -0.06em; }
