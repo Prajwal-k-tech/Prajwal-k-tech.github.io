@@ -21,7 +21,7 @@ Open <http://127.0.0.1:4173>.
 - Favorite quotes follow the personal interests within About, with linked attributions and alternating imagery. Keep excerpts short and check attribution when editing.
 - `DESIGN.md` explains the design audit, information architecture and stack choice.
 
-The portfolio uses the Ristretto palette and self-hosted Geist. Six featured projects and six group projects each have a real interface, terminal capture or recorded experiment image. All copy and direct links remain in the page. Preserve team attribution, private-source boundaries, prototype labels and evaluation scope when editing. CTF highlights refer to specific historical events; live season standings stay on CTFtime.
+The portfolio uses the Ristretto palette and self-hosted Geist. Six featured projects and six group projects each have a real interface, terminal capture or recorded experiment image. The quote section uses source imagery and original themed illustrations. All copy and direct links remain in the page. Preserve team attribution, private-source boundaries, prototype labels and evaluation scope when editing. CTF highlights refer to specific historical events; live season standings stay on CTFtime.
 
 There is no build step, API key, scraping proxy, analytics or application server.
 
