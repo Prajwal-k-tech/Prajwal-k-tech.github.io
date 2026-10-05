@@ -264,6 +264,7 @@ details p { margin-top: 10px; max-width: 65ch; }
 .quote-art { display: block; width: 100%; fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.65; }
 .quote-photo { height: auto; max-height: 110px; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 34%; border: 1px solid color-mix(in srgb, var(--accent) 58%, transparent); border-radius: 16px; filter: grayscale(.18) sepia(.28) saturate(1.05) hue-rotate(326deg); opacity: .96; box-shadow: 0 10px 30px rgb(0 0 0 / .18); }
 .quote-photo.quote-generated { filter: none; object-position: center; }
+.quote-illustration { height: 92px; object-fit: contain; opacity: .95; }
 .quote-symbol { height: 82px; aspect-ratio: 1.55; display: grid; place-items: center; opacity: .96; }
 .quote-symbol svg { display: block; width: 100%; height: 100%; overflow: visible; }
 .bat-oval { fill: var(--accent); }
@@ -328,6 +329,7 @@ footer a { display: inline-flex; align-items: center; min-height: 32px; text-dec
   .quote { grid-template-columns: 64px minmax(0, 1fr); gap: 20px; padding: 28px 0; }
   .quote:nth-child(even) { grid-template-columns: minmax(0, 1fr) 64px; }
   .quote-photo { max-height: 58px; border-radius: 12px; }
+  .quote-illustration { height: 48px; }
   .quote-symbol { height: 40px; aspect-ratio: 1.55; }
   .quote blockquote p { font-size: 21px; text-wrap: pretty; }
   .quote figcaption { font-size: 13px; }
