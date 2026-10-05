@@ -262,6 +262,8 @@ details p { margin-top: 10px; max-width: 65ch; }
 .quote:nth-child(even) .quote-art { grid-column: 2; grid-row: 1; }
 .quote:nth-child(even) > div { grid-column: 1; grid-row: 1; }
 .quote-art { display: block; width: 100%; fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.65; }
+.quote-photo { height: auto; max-height: 110px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; filter: grayscale(.35) sepia(.48) saturate(1.35) hue-rotate(326deg); opacity: .9; }
+.quote-symbol { height: 82px; aspect-ratio: 600 / 271; background: var(--accent); mask: url("assets/batman-emblem.svg") center / contain no-repeat; -webkit-mask: url("assets/batman-emblem.svg") center / contain no-repeat; opacity: .88; }
 .quote-solid, .quote-dot { fill: var(--accent); stroke: none; }
 .quote blockquote { margin: 0; }
 .quote blockquote p { color: var(--text); font-size: clamp(21px, 2.3vw, 30px); line-height: 1.45; letter-spacing: -0.025em; text-wrap: balance; }
@@ -322,6 +324,8 @@ footer a { display: inline-flex; align-items: center; min-height: 32px; text-dec
   .quote-list { margin-top: 24px; }
   .quote { grid-template-columns: 64px minmax(0, 1fr); gap: 20px; padding: 28px 0; }
   .quote:nth-child(even) { grid-template-columns: minmax(0, 1fr) 64px; }
+  .quote-photo { max-height: 58px; border-radius: 12px; }
+  .quote-symbol { height: 36px; }
   .quote blockquote p { font-size: 21px; text-wrap: pretty; }
   .quote figcaption { font-size: 13px; }
   footer { font-size: 13px; }

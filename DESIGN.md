@@ -21,7 +21,7 @@ The previous version had a system-dependent serif display font mixed with Geist,
 - Preserve prototype and work-in-progress labels, private-source boundaries, team contributions and Drishti's external evaluation result.
 - Keep the academic subtitle above the name, followed by the work button and Resume, GitHub and LinkedIn links. Mobile separates the work button from the three profile links.
 - Experience links to Edhanta and the three CIO magazine sites. Stack labels are supported by the repositories' dependency manifests; no private source is linked.
-- Put seven short favorite quotes after the personal interests within About. Alternate the text and original SVG motifs, using the existing palette and no new image downloads. Link each attribution to its source; retain short excerpts rather than full passages.
+- Put seven favorite quotes after the personal interests within About. Alternate the text and the visual from left to right, using the existing palette. Mix sourced imagery with the line motifs, and link each attribution to its source.
 
 ## Tokens
 
@@ -64,3 +64,4 @@ Copy stays in `index.html`, grouped by commented section and project article. Ke
 - LurajBot uses both of Prajwal’s supplied February and April 2022 Discord screenshots. CSS crops the unused right-hand space and scales them proportionally side by side. The original PNGs remain unchanged.
 - Algorithima and KOJ are captures of their public sorting visualizer and problem archive.
 - Anchor pairs home and paced-breathing screenshots from the current debug APK on an API 35 emulator; legacy PTSD Coach reference images are excluded. ZeroKlue shows the local /verify prototype route with developer tooling hidden and no wallet connection. KPlaceNet visualizes the recorded L4 held-out OSV-5M experiment from docs/results/l4_adaptive_cells.md; RayTray uses its repository’s rendered scene.
+- The Yoda still is a small crop from the [official StarWars.com Databank](https://www.starwars.com/databank/yoda), credited to Lucasfilm. The Batman silhouette is the [CC0 file on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Batman_logo_(solid_black_silhouette).svg), recolored with the site's peach accent.
