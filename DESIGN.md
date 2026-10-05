@@ -4,7 +4,7 @@
 
 A personal CS portfolio for research mentors and engineering hiring teams. Preserve the Ristretto palette, candid portrait and actual project captures. Use a clear sans-serif hierarchy, substantial project summaries and restrained interaction. Design variance 6, motion intensity 3, visual density 4.
 
-The distinctive elements are the warm portrait, its arched crop and static, broad Ristretto-colored contour bands behind it. The bands frame the portrait, crop cleanly on mobile and keep clear space around the text. The rest of the page supports reading and assessing the work. Avoid decorative labels, oversized secondary headings, animated backgrounds, technology logo walls and manufactured metrics.
+The distinctive elements are the warm portrait, static Ristretto-colored contour bands flowing through the page background, and sourced quote images treated with a shared warm filter. Keep the portrait itself clean and let the background pattern add atmosphere beyond the hero. The rest of the page supports reading and assessing the work. Avoid decorative labels, oversized secondary headings, animated backgrounds, technology logo walls and manufactured metrics.
 
 ## Audit and decisions
 
