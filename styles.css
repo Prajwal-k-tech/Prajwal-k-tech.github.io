@@ -137,7 +137,7 @@ h4 { font-size: 19px; line-height: 1.35; letter-spacing: -0.02em; }
 }
 .button:hover { color: var(--deep); background: #f8a788; }
 .button:active { transform: translateY(1px); }
-.section { padding: var(--space-section) 0; border-top: 1px solid var(--rule); scroll-margin-top: calc(0px - var(--space-section)); }
+.section { padding: var(--space-section) 0; border-top: 1px solid var(--rule); scroll-margin-top: 0; }
 .section-intro { max-width: 58ch; margin-top: 18px; font-size: 18px; }
 
 /* All actual project captures share a frame without cropping away the UI. */
@@ -161,7 +161,7 @@ h4 { font-size: 19px; line-height: 1.35; letter-spacing: -0.02em; }
 .project > p { max-width: 60ch; }
 .stack { margin-top: 18px; font-size: 14px; }
 .artifact-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 20px; font-size: 15px; }
-.artifact-links a, .artifact-links > span { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; text-decoration: none; }
+.artifact-links a, .artifact-links > span { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; text-decoration: none; }
 .artifact-links > span { color: var(--secondary); }
 .artifact-links a:hover { text-decoration: underline; }
 .finding {
@@ -173,7 +173,7 @@ h4 { font-size: 19px; line-height: 1.35; letter-spacing: -0.02em; }
 }
 .finding strong { display: block; margin-bottom: 6px; font-size: 15px; font-weight: 600; }
 details { margin-top: 18px; font-size: 15px; }
-summary { width: fit-content; min-height: 34px; padding: 5px 0; color: var(--secondary); cursor: pointer; }
+summary { width: fit-content; min-height: 44px; padding: 5px 0; color: var(--secondary); cursor: pointer; }
 summary:hover, details[open] summary { color: var(--text); }
 details p { margin-top: 10px; max-width: 65ch; }
 .terminal-project-image { background: #161820; }
@@ -222,13 +222,13 @@ details p { margin-top: 10px; max-width: 65ch; }
   background: color-mix(in srgb, var(--deep) 42%, transparent);
   border-radius: var(--radius);
 }
-.rating-provider { display: block; width: fit-content; padding: 4px 0; font-size: 19px; font-weight: 600; text-decoration: none; }
+.rating-provider { display: inline-flex; min-height: 44px; align-items: center; width: fit-content; padding: 4px 0; font-size: 19px; font-weight: 600; text-decoration: none; }
 .judge-handle { font-size: 14px; }
 .rating-details { flex: 1; min-width: 0; text-align: right; }
 .rating-value { display: block; font-size: 32px; font-weight: 600; line-height: 1.15; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
 .rating-caption { margin-top: 5px; font-size: 14px; white-space: pre-line; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 16px; }
-.profile-links a, .security-profile-link { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; text-decoration: none; }
+.profile-links a, .security-profile-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 15px; text-decoration: none; }
 .security-profile-link { margin-top: 14px; }
 .profile-links a:hover, .security-profile-link:hover { text-decoration: underline; }
 .ctf-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 28px; margin: 24px 0 18px; }
@@ -247,7 +247,7 @@ details p { margin-top: 10px; max-width: 65ch; }
 .contact-email { display: inline-block; padding: 4px 0; font-size: clamp(19px, 2.5vw, 32px); letter-spacing: -0.025em; color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
 .contact-email:hover { text-decoration: underline; }
 .contact-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 28px; margin-top: 26px; font-size: 15px; }
-.contact-links a, .contact-links span { display: inline-flex; min-height: 36px; align-items: center; gap: 6px; text-decoration: none; }
+.contact-links a, .contact-links span { display: inline-flex; min-height: 44px; align-items: center; gap: 6px; text-decoration: none; }
 .contact-links > span { color: var(--secondary); }
 .quotes { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--rule); }
 .quotes > h3 { font-size: clamp(26px, 2.7vw, 34px); line-height: 1.25; }
@@ -274,7 +274,7 @@ details p { margin-top: 10px; max-width: 65ch; }
 .quote figcaption a { text-decoration-color: var(--rule); }
 .quote figcaption a:hover { text-decoration-color: var(--accent); }
 footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 0 28px; border-top: 1px solid var(--rule); font-size: 14px; }
-footer a { display: inline-flex; align-items: center; min-height: 32px; text-decoration: none; }
+footer a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
 .not-found { max-width: 720px; padding: 120px 0; }
 .not-found h1 { font-size: clamp(36px, 5vw, 60px); }
 .not-found p { margin: 26px 0 32px; font-size: 20px; }

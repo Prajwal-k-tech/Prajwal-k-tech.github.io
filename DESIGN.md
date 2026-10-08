@@ -14,11 +14,12 @@ The previous version had a system-dependent serif display font mixed with Geist,
 - Center the four primary navigation links, enlarge them and keep them accessible while scrolling. Mark the current reading section with a single underline.
 - Keep primary text, secondary text and metadata distinct through size and weight. Use peach for the primary button, contact address, focus and modest link cues. No orange section eyebrows.
 - Give the real project screenshots the same 8:5 frame without cutting off the interface. Keep the portrait bounded at every width.
-- Show six featured projects under “Some of my work” and six team projects under “Some of my group projects”. Every entry has an actual interface, terminal capture, repository artifact or visualization of recorded experiment results. Both use the same two-column card grid and image dimensions, collapsing to one column on mobile.
+- Show six featured projects under “Some of my work” and six team projects under “Team projects”. Every entry has an actual interface, terminal capture, repository artifact or visualization of recorded experiment results. Both use the same two-column card grid and image dimensions, collapsing to one column on mobile.
 - Put the publication with research. Put experience, CP, CTFs and hobbies under About. Avoid repeating the same project descriptions in those sections.
 - CTF highlights are historical event results with event years and team attribution. Current season ranks and points belong on CTFtime.
 - Codeforces uses its official JSONP API. When it fails or returns unusable data, the page shows the verified personal best rather than claiming stale data is current. Other online judges remain direct profile links.
 - Preserve prototype and work-in-progress labels, private-source boundaries, team contributions and Drishti's external evaluation result.
+- Keep project and profile links easy to tap, use the canonical team repository for KOJ, and use a direct email action rather than an unrelated app landing page.
 - Keep the academic subtitle above the name, followed by the work button and Resume, GitHub and LinkedIn links. Mobile separates the work button from the three profile links.
 - Experience links to Edhanta and the three CIO magazine sites. Stack labels are supported by the repositories' dependency manifests; no private source is linked.
 - Put seven favorite quotes after the personal interests within About. Alternate the text and the visual from left to right, using the existing palette. Mix sourced imagery with the line motifs, and link each attribution to its source.
@@ -53,7 +54,7 @@ These are structural references, not copied layouts or endorsements.
 
 ## Interaction and maintenance
 
-Motion responds to navigation and hover. Smooth scrolling and transitions honor reduced motion. There is no scroll hijacking, automatic carousel, animation loop, tracking or form backend.
+Motion responds to navigation and hover. Smooth scrolling and transitions honor reduced motion. Anchor targets clear the sticky navigation, and interactive links have comfortable touch targets. There is no scroll hijacking, automatic carousel, animation loop, tracking or form backend.
 
 Copy stays in `index.html`, grouped by commented section and project article. Keep evidence and status accurate when changing text. Project screenshots and the resume are local assets; layout and palette tokens are in `styles.css`.
 
