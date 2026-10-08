@@ -1,33 +1,27 @@
-# Prajwal Kumar K · Portfolio
+# Prajwal Kumar K — Portfolio
 
-Personal portfolio hosted on [GitHub Pages](https://prajwal-k-tech.github.io/). Static HTML/CSS with small scripts for active navigation and an optional Codeforces rating refresh.
+Personal portfolio for my software projects, open-source work, competitive programming, and research interests.
 
-## Local preview
+**Live site:** [prajwal-k-tech.github.io](https://prajwal-k-tech.github.io/)
+
+## Run locally
+
+This is a static site with no build step or server-side dependencies. From the repository root, run:
 
 ```sh
-python -m http.server 4173 --bind 127.0.0.1
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open <http://127.0.0.1:4173>.
+Then open <http://127.0.0.1:4173> in a browser. Stop the server with `Ctrl+C`.
 
-## Editing
+## Built with
 
-- `index.html` contains all copy, project order, status labels and links. Comments mark each main section.
-- `styles.css` contains palette tokens, the type scale, layout and responsive rules.
-- `profiles.js` refreshes Codeforces from the official JSONP API. The HTML fallback is a personal best, not a stale current rating. Other judges link directly to their profiles.
-- `site.js` marks the current navigation section. The content and anchor links work without JavaScript.
-- `assets/` contains the portrait, actual project screenshots, local fonts and downloadable resumes.
-- Contact links to separate software engineering, AI/research and cybersecurity resume PDFs. Outbound links and resume PDFs open in a new tab, while section navigation stays on the page. The hero Resume link opens the software engineering version; PDF query strings use the first 12 characters of each file's SHA-256 hash.
-- Favorite quotes follow the personal interests within About, with linked attributions and alternating imagery. Keep excerpts short and check attribution when editing.
-- `DESIGN.md` explains the design audit, information architecture and stack choice.
+- HTML, CSS, and vanilla JavaScript
+- Geist font files served from the repository
+- GitHub Pages hosting
 
-The portfolio uses the Ristretto palette and self-hosted Geist on a plain solid background. Six featured projects and six group projects each have a real interface, terminal capture or recorded experiment image. The quote section uses source imagery and original themed illustrations with a shared warm photo treatment. All copy and direct links remain in the page. Preserve team attribution, private-source boundaries, prototype labels and evaluation scope when editing. CTF highlights refer to specific historical events; live season standings stay on CTFtime.
+The site works without an API key or application server. The Codeforces rating is refreshed from its public JSONP endpoint when available; the page includes a static fallback. Other competitive programming profiles link to their respective platforms.
 
-There is no build step, API key, scraping proxy, analytics or application server.
+## Project links and downloads
 
-To edit project text, open `index.html` and search for the project's heading. Each adjacent `<article>` contains its image, description, status, stack and available links. Keep these two sections and their order:
-
-1. **Some of my work:** BattleCP, Bluff, PokeForge, Drishti-XAI, To-Do-or-Die, LurajBot.
-2. **Some of my group projects:** Algorithima, KOJ, Zero-Klue, Anchor, KPlaceNet, RayTray.
-
-Both sections share the same two-column card and image layout. Drishti-XAI's source is private, so its card shows that status without a source link.
+Project details, source links, live demos, contact information, and role-specific resume PDFs are available on the portfolio itself. Project descriptions distinguish individual work from team projects and label prototypes or private source where applicable.
