@@ -249,9 +249,6 @@ details p { margin-top: 10px; max-width: 65ch; }
 .contact-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 28px; margin-top: 26px; font-size: 15px; }
 .contact-links a, .contact-links span { display: inline-flex; min-height: 36px; align-items: center; gap: 6px; text-decoration: none; }
 .contact-links > span { color: var(--secondary); }
-.resume-downloads { margin-top: 32px; }
-.resume-downloads h3 { font-size: 19px; }
-.resume-downloads .artifact-links { margin-top: 8px; }
 .quotes { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--rule); }
 .quotes > h3 { font-size: clamp(26px, 2.7vw, 34px); line-height: 1.25; }
 .quote-list { max-width: 1050px; margin: 40px auto 0; }
