@@ -61,14 +61,13 @@ h4 { font-size: 19px; line-height: 1.35; letter-spacing: -0.02em; }
 .skip:focus { top: 10px; }
 
 /* Navigation has one job; the hero already introduces Prajwal. */
-.site-header { position: sticky; top: 0; z-index: 2; background: var(--canvas); }
+.site-header { position: sticky; top: 0; z-index: 2; background: var(--canvas); border-bottom: 1px solid var(--rule); }
 .site-header nav {
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: clamp(24px, 4vw, 52px);
-  border-bottom: 1px solid var(--rule);
 }
 .site-header a {
   position: relative;
